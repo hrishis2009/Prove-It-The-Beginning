@@ -1,0 +1,315 @@
+\section{Chapter 4}
+\subsection{Exercises} % Chapter 4
+\begin{sol}{Exercise 4.1}
+We will prove this via direct proof.
+\begin{proof}
+\[
+2 \mid p \implies \exists k \in \mathbb{Z} \text{ such that } p = 2k
+\]
+\[
+p^2 = (2k)^2 = 4k = 2(2k)
+\]
+and thus
+\[
+2 \mid 2(2k) \implies 2 \mid p^2
+\]
+\end{proof}
+Now that we proved the converse and the forwards of the original statement, we have in total proved
+\[
+2 \mid p \iff 2 \mid p^2
+\]
+\end{sol}
+\begin{sol}{Exercise 4.2}
+This is easy enough given the proof without words, but we will prove it yet another way. 
+\begin{proof}
+By definition of a subset
+\[
+A \subset B \implies A \cap B = A
+\]
+We are looking to prove that $B' \subset A'$, which is equivalent to
+\[
+B' \cap A' = B'
+\]
+We now substitute the original equation, which we used to define the subset identity
+\[
+B' \cap A' = B' \cap (A \cap B)'
+\]
+which by De'Morgan's Law (Problem 2.2) is 
+\[
+= B' \cap (A' \cup B')
+\]
+which we then apply the distributive property to get
+\[
+= (B' \cap A') \cup(B' \cap B') = (B' \cap A') \cup B'
+\]
+and since $(B' \cap A') \subset B'$ by definition of the intersection operator, we get 
+\[
+= B'
+\]
+since the union of a set and its subset it the original set. We have therefore just proved
+\[
+B' \cap A' = B' \implies B' \subset A'
+\]
+\end{proof}
+\end{sol}
+
+
+\subsection{Problems} % Chapter 4
+\begin{sol}{Problem 4.1}
+This proof follows very similar to the proof of the irrationality of $\sqrt{2}$.
+\begin{proof}
+Assume $\sqrt{p} \in \mathbb{Q}$. This implies $\exists k \in \mathbb{Z}, \exists q \in \mathbb{N}$ such that $\gcd(q, k) = 1$ and $\sqrt{p} = \frac{q}{k}$. We then manipulate the equation
+\[
+\sqrt{p} = \frac{q}{k}
+\]
+\[
+p = \frac{q^2}{k^2}
+\]
+\[
+pk^2 = q^2
+\]
+which implies that $p \mid q^2$. By Euclid's Lemma, this implies $p \mid q$. Therefore, $\exists \ell \in \mathbb{N}$ such that $q = \ell p$. Then, $q^2 = (\ell p)^2 = \ell^2p^2$ so we substitute this into the original expression
+\[
+pk^2 = \ell^2 p^2
+\]
+\[
+k^2 = \ell^2 p
+\]
+which implies $p \mid k^2$, and again by Euclid's Lemma, $p \mid k$. If $p \mid q$ and $p \mid k$, then $\gcd(p, q) \geq p$, which contradicts the original construction of the fraction in reduced form such that $\gcd(p, q) = 1$. Because we have a contradiction, $\sqrt{p} \not\in \mathbb{Q}$, and is this irrational.
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.2}
+\begin{proof}
+Motivated by the $4m$ term, we consider this equation $\pmod{4}$. Taking both sides $\pmod{4}$ gives us
+\[
+n^4 \equiv 2 \pmod{4}
+\]
+We know that $n^2$ can only be $\equiv 0, 1 \pmod{4}$. Therefore, $n^4$ can also only be $\equiv 0, 1 \pmod{4}$. Thus, there exist no solutions such that $n^4 \equiv 2 \pmod{4}$, and no solutions to the equation.
+\end{proof}
+Equations involving integers are known as Diophantine Equations. Taking mods is a very powerful technique in dealing with these types of equations. You have already seen a short introduction in the Problem set of chapter 3. 
+\end{sol}
+
+\begin{sol}{Problem 4.3}
+\begin{proof}
+We will do a proof by contrapositive. We aim to prove that 
+\[
+\lnot(\text{$a$ and $b$ are odd}) \implies 2 \mid ab
+\]
+There are three cases. First is when $a$ is odd and $b$ is even. Second is when $a$ is even and $b$ is odd. Third is when $a$ and $b$ are both even. 
+
+We begin with the first case. If $b$ is even, there exists $\beta \in \mathbb{Z}$ such that $b = 2\beta$. Then, 
+\[
+ab = 2a\beta
+\]
+which is clearly even. $2 \mid 2a\beta$. The second case follows nearly the exact same, instead with $a = 2\alpha$ for some $\alpha \in \mathbb{Z}$.
+
+Case 3 has $a = 2\alpha$ and $b = 2\beta$ for some $\alpha, \beta \in \mathbb{Z}$. Then,
+\[
+ab = 4\alpha\beta
+\]
+which is clearly divisible by two. Thus, we have proven the contrapositive which proves the original statement that 
+\[
+\text{$ab$ is odd} \implies \text{$a$ and $b$ are odd}
+\]
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.4}
+\begin{proof}
+The contrapositive is
+\[
+\text{$a$ and $b$ do not have the same parity} \implies \text{a+b is odd}
+\]
+There are two cases. First, when $a$ is even and $b$ is odd, second, when $a$ is odd and $b$ is even. 
+
+Consider case 1. 
+\[
+a + b = even + odd = odd
+\]
+which is odd.
+
+Now, case 2.
+\[
+a + b = odd + even = odd
+\]
+which is also odd
+
+This proves the contrapositive.
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.5}
+It is always a good idea to try contradiction when trying to prove the rationality of a number. It has been the method we have used so far and it is a very useful method. However, the specific means of proof will differ from that of Problem 4.1.
+\begin{proof}
+Assume for contradiction that $\log_{2}{3}$ is rational. This would imply that $\exists p \in \mathbb{Z}, \exists q \in \mathbb{N}$ such that $\gcd(p, q) = 1$ and $\log_{2}{3} = \frac{p}{q}$. This implies
+\[
+2^{\frac{p}{q}} = 3
+\]
+rearranging, we get
+\[
+\sqrt[q]{2^p} = 3
+\]
+\[
+2^p = 3^q
+\]
+First, note that since $\log_{2}{3} > 0$ and $\log_{2}{3} = \frac{p}{q}$, $\frac{p}{q} > 0$ and so $p \in \mathbb{N} \subset \mathbb{Z}$. When we restrict to positive integers, both sides of the equation ($2^p$ and $3^q$) are restricted to positive integers. Thus, we can use tools from standard number theory. 
+
+$2^p$ is even for all $p \geq 1$ ($p \in \mathbb{N}$). Meanwhile, $3^q$ is never even for any $q \in \mathbb{N}$. An even number cannot equal and odd number, which is a contradiction. Therefore, since $\log_{2}{3}$ cannot be expressed as $\frac{p}{q} \in \mathbb{Q}$, it is irrational. 
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.6}
+\begin{proof}
+Consider the equation taken $\pmod{4}$. 
+\[
+x^2 + y^2 \equiv 3 \pmod{4}
+\]
+Assume there exists solutions. We use the fact that perfect squares are always either $\equiv 0, 1 \pmod{4}$. No combination of two $0$'s or two $1$'s will equal $3$, and thus we have a contradiction. There exist $\boxed{\text{no possible solutions}}$ since the maximum possible residue $\pmod{4}$ is 
+\[
+1 + 1 \equiv 2 \pmod{4}
+\]
+which is less than 3.
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.7}
+We first prove the original statement.
+\begin{proof}
+Consider the following diagram.
+
+
+\begin{center}
+\begin{tikzpicture}
+
+% Circle radius and center
+\def\R{3}
+\coordinate (O) at (0,0);
+
+% Place A and B as endpoints of a diameter (hypotenuse)
+\coordinate (A) at (-3,0);
+\coordinate (B) at (3,0);
+
+% C is any point on the circle (not on diameter) — pick 60 degrees
+\coordinate (C) at ({3*cos(70)},{3*sin(70)});
+
+% Draw the semicircle arc AB (bottom, 180 degrees) in red
+\draw[red, thick] (A) arc[start angle=180, end angle=360, radius=\R];
+
+% Draw the rest of the circle
+\draw[thick] (A) arc[start angle=180, end angle=0, radius=\R];
+
+% Draw triangle
+\draw[thick] (A) -- (B) -- (C) -- cycle;
+
+% Right angle mark at C
+\draw[thick]
+  ($(C)!0.07!(A)$) -- ($(C)!0.07!(A) + ($(C)!0.07!(B)$) - (C)$) -- ($(C)!0.07!(B)$);
+
+% Draw and label center O
+\fill (O) circle (2pt);
+\node[below] at (O) {$O$};
+
+% Label vertices
+\node[left]  at (A) {$A$};
+\node[right] at (B) {$B$};
+\node[above] at (C) {$C$};
+
+\end{tikzpicture}
+\end{center}
+
+By definition of a circumcircle, we have that all points $A$, $B$, and $C$ lie on the circle. Then, by the inscribed angle theorem, since $\angle ACB = 90^\circ$, $\angle AOB = 180^\circ$ and $AOB$ is thus a straight line. Note that since the central angle $\angle AOB = 180^\circ$, the arc subtended by this central angle, highlighted in red, is also $180^\circ$ and is thus half of the circumference of the circle. Sine $AB$ is a straight line such that either side of the line contains half of the circle, $AB$ is a diameter of the circumcircle. Therefore, the length of this diameter is $2R$, where $R$ is the radius of the circumcircle.
+\end{proof}
+
+Now, we will prove the converse.
+\begin{proof}
+$AB = 2R$ implies that $AB$ is twice the radius and thus the diameter of the circumcircle. If $AB$ is a diameter, then it subtends an arc of angle $180^\circ$. Then, the inscribed angle of this arc must be $\frac{180}{2} = 90^\circ$, which is the right angle opposite to the hypotenuse. 
+\end{proof}
+
+Both the forwards and backwards direction utilized the inscribed angle theorem in their proofs! This is a very powerful tool for proving things to do with shapes inscribed in circles. 
+\end{sol}
+
+\begin{sol}{Problem 4.8}
+This problem is similar to the proof of the infinitude of primes, but utilizing the structure of the set of residues $\pmod{4}$.
+\begin{proof}
+We proceed by contradiction. Assume there are a finite number of primes congruent to $3 \pmod{4}$. WLOG, denote these primes as $\{p_1, p_2, \ldots, p_k\}$ where $k$ is the number of primes. Then, consider the number
+\[
+N = 4p_1\cdot p_2\cdots p_k -1
+\]
+which is clearly of the form $4k-1$ and is not divisible by any of the primes $p_i$. 
+
+Consider the prime factorization of $N$:
+\[
+N = q_1^{e_1}q_2^{e_2}\cdots q_m^{e_m}
+\]
+Each prime factor must be congruent to either $1$ or $3 \pmod{4}$. Furthermore, since $N \equiv 3 \pmod{4}$, there must exist at least one prime factor $q_i$ such that $q_i \equiv 3 \pmod{4}$. This means that $\exists i \in [1, m]$ such that $q_i \equiv 3 \pmod{4} \implies \exists j \in [1, k]$ such that $q_i = p_j$ and $q_i \mid N$. This is a contradiction, however, since by construction, $p_j \nmid N$ since 
+\[
+N \equiv -1 \pmod{p_j}
+\]
+$\forall j \in [1, k]$. Thus, our initial assumption was false, and there are infinitely many primes of the form $4k-1$.
+\end{proof}
+\end{sol}
+
+\begin{sol}{Problem 4.9}
+This is a difficult problem that requires a lot of ingenuity and work, and is why this problem has so many hints! 
+\begin{proof}
+First, WLOG, assume that $a^5b + 3$ is a perfect cube. Then, assume for contradiction that $ab^5+3$ is also a perfect cube. Consider these integers $\pmod{9}$, and consider the below lemmas. 
+
+\textbf{Lemma P4.9.1}
+\[
+a^5b, ab^5 \equiv 5, 7 \pmod{9}
+\]
+\begin{proof}
+All perfect cubes must be equivalent to $-1, 0, 1 \pmod{9}$. Since
+\[
+a^5b + 3, ab^5 + 3 \equiv -1, 0,1 \pmod{9}
+\]
+we have the three possibilities
+\[
+a^5b, ab^5 \equiv 5, 6, 7 \pmod{9}
+\]
+However, $a^5b \equiv 6 \pmod{9}$ implies that $b \equiv 3, 6 \pmod{9}$ since if $a \equiv 3, 6 \pmod{9}$, then $a^5 \equiv 0 \pmod{9}$. However, this contradicts that $ab^5 \equiv 5, 6, 7 \pmod{9}$ since $b \equiv 3, 6 \pmod{9}$ implies that $b^5 \equiv 0 \not\equiv 5, 6, 7 \pmod{9}$. Thus, 
+\[a^5b \not\equiv 6 \pmod{9}\]
+A similar argument on $ab^5 \equiv 6 \pmod{9}$ arguing that $a \equiv 3, 6 \pmod{9}$ yields that 
+\[
+ab^5 \not\equiv 6 \pmod{9}
+\]
+Thus, the possibilities are fourfold
+\[
+a^5b, ab^5 \equiv 5, 7 \pmod{9}
+\]
+\end{proof}
+
+Since perfect cubes must be equivalent to $-1, 0, 1 \pmod{9}$, sixth powers must be congruent to $0, 1 \pmod{9}$. Thus, we will consider 
+\[
+ab^5 \cdot a^5b \equiv a^6b^6 \equiv (ab)^6 \pmod{9}
+\]
+There are four cases
+\[
+\begin{cases}
+a^5b \equiv 5 \pmod{9}, ab^5 \equiv 5 \pmod{9} \\
+a^5b \equiv 5 \pmod{9}, ab^5 \equiv 7 \pmod{9} \\
+a^5b \equiv 7 \pmod{9}, ab^5 \equiv 5 \pmod{9} \\
+a^5b \equiv 7 \pmod{9}, ab^5 \equiv 7 \pmod{9}
+\end{cases}
+\]
+Beginning with case one, 
+\[
+(ab)^6 \equiv ab^5 \cdot a^5b \equiv 5 \cdot 5 \equiv 25 \equiv 7 \not\equiv 0, 1 \pmod{9}
+\]
+Case two,
+\[
+(ab)^6 \equiv ab^5 \cdot a^5b \equiv 5 \cdot 7 \equiv 35 \equiv -1 \not\equiv 0, 1 \pmod{9}
+\]
+Case three,
+\[
+(ab)^6 \equiv ab^5 \cdot a^5b \equiv 7 \cdot 5 \equiv 35 \equiv -1 \not\equiv 0, 1 \pmod{9}
+\]
+And finally, case four,
+\[
+(ab)^6 \equiv ab^5 \cdot a^5b \equiv 7 \cdot 7 \equiv 49 \equiv 4 \not\equiv 0, 1 \pmod{9}
+\]
+which is a contradiction in all four cases. Thus, both $ab^5 + 3$ and $a^5b + 3$ cannot simultaneously be prefect cubes of integers.
+\end{proof}
+After solving all these problems at the end of the chapter, you may have noticed more contradiction proofs than contrapositive. This is intentional! You will encounter vastly more proofs by contradiction than proofs by contrapositive, though it is important to know both. 
+\end{sol}
