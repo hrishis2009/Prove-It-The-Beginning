@@ -1,0 +1,83 @@
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newpxtext}
+\usepackage{newpxmath}
+
+% --- CHAPTER & SECTION STYLING ---
+\usepackage[PetersLenny]{fncychap} % Beautiful chapter banners
+
+% Safe section styling without titlesec (avoids internal macro conflicts):
+%\makeatletter
+%\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+%  {-3.5ex \@plus -1ex \@minus -.2ex}%
+%  {2.3ex \@plus .2ex}%
+%  {\normalfont\Large\bfseries}}
+%\makeatother
+% ---------------------------------
+
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{enumitem}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\pgfplotsset{plot coordinates/math parser=false} % Speeds up math calculations
+
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{tcolorbox}
+\usepackage{indentfirst}
+\usepackage{lettrine}
+\tcbuselibrary{skins, breakable}
+\raggedbottom
+
+\newcommand{\begchap}[1]{\lettrine[lines=2]{\textbf{#1}}{}}
+
+\title{Prove It?: The Beginning}
+\author{Hrishikesh Shanmuganathan}
+
+% Theorem counter - shared by mathematical environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem{problem}{Problem}[chapter]
+\newtheorem{example}{Example}[chapter]
+
+\newenvironment{sol}[1]{%
+  \par\medskip%
+  \begin{tcolorbox}[
+    breakable,
+    enhanced,
+    colback=white,
+    frame hidden,
+    skin=standard,
+    borderline west={3pt}{0pt}{gray!60},
+    left=8pt,
+    right=6pt,
+    top=3pt,
+    bottom=3pt
+  ]%
+  \noindent{\textit{Solution to \textbf{#1}.}}\par\smallskip%
+}{%
+  \end{tcolorbox}\medskip%
+}
+
+\newcommand{\hints}[1]{\noindent\textup{Hints: #1.}}
+
+\usepackage{hyperref}
+\usepackage{xurl}

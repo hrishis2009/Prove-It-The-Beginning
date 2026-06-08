@@ -1,0 +1,50 @@
+\documentclass[11pt]{book}
+\usepackage[
+    paperwidth=5.5in,
+    paperheight=8.5in,
+    top=0.8in,
+    bottom=0.85in,
+    inner=0.85in,
+    outer=0.65in,
+    heightrounded
+]{geometry}
+\usepackage{setspace}
+\setstretch{1.15}
+
+\input{preamble}
+
+% \includeonly{chapters/chapter5, chapters/appendices/aps5}
+
+% \includeonly{chapters/chapter1}
+% \includeonly{chapters/chapter2}
+% \includeonly{chapters/chapter3}
+% \includeonly{chapters/chapter4}
+% \includeonly{chapters/chapter5}
+% \includeonly{chapters/appendix}
+
+\begin{document}
+\include{frontmatter}
+
+\mainmatter
+
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+\include{chapters/chapter5}
+
+\appendix
+\include{chapters/appendices/hints}
+
+\chapter{Solutions}
+\include{chapters/appendices/aps1}
+\include{chapters/appendices/aps2}
+\include{chapters/appendices/aps3}
+\include{chapters/appendices/aps4}
+\include{chapters/appendices/aps5}
+
+\include{chapters/appendices/resources}
+
+
+
+\end{document}
