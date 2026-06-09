@@ -1,3 +1,5 @@
+![GitHub Downloads](https://img.shields.io/github/downloads/hrishis2009/Prove-It-The-Beginning/total)
+
 # Prove It?: *The Beginning*
 A friendly introduction to mathematical proofs written by and for high-school students and math competition enthusiasts.
 
