@@ -1,7 +1,74 @@
-![GitHub Downloads](https://img.shields.io/github/downloads/hrishis2009/Prove-It-The-Beginning/total)
+![GitHub Downloads](https://img.shields.io/github/downloads/hrishis2009/Prove-It-The-Beginning/total) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hrishis2009/Prove-It-The-Beginning)
 
 # Prove It?: *The Beginning*
-A friendly introduction to mathematical proofs written by and for high-school students and math competition enthusiasts.
+A friendly introduction to mathematical proofs written by and for students and math competition enthusiasts.
 
-Access the book by going to Releases, selecting the latest version, and downloading the pdf titled "Prove It? The Beginning v1.1.pdf".
+<p align="center">
+  <a href="https://github.com/hrishis2009/Prove-It-The-Beginning/releases/download/v1.1/Prove.It.The.Beginning.v1.1.pdf">
+    <img src="https://img.shields.io/badge/Download_Latest_(v1.1)-2ea44f?style=for-the-badge" alt="Download Latest (v1.1)" width="400" height="60">
+  </a>
+</p>
 
+Alternatively, access the book by going to [Releases](https://github.com/hrishis2009/Prove-It-The-Beginning/releases), selecting the latest version (v1.1), and selecting "Prove It? The Beginning v1.1.pdf".
+
+Yet another alternative method is by going to [Releases](https://github.com/hrishis2009/Prove-It-The-Beginning/releases), downloading the source code ([zip](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.zip) / [tar.gz](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.tar.gz)), and compiling using a LaTeX distribution such as [MacTeX](https://www.tug.org/mactex/) or [MikTeX](https://miktex.org/).
+
+From the ``src`` directory, run
+
+```
+latexmk -pdf main.tex
+```
+This build process has been tested primarily with ``latexmk`` and pdfLaTeX. Alternative compilers or build systems may need to install additional dependencies(INSERT LINK) or make minor adjustments to the build/compile process.
+
+
+## About
+
+I wrote this book because ***math is more than numbers***. In my school system (US), and many more around the world, mathematics is taught as a subject in which the primary goal is to solve for some variable $x$. Yet, mathematical proofs are a cornerstone of the field that students learn far too late. This is meant to serve as a friendly introduction to mathematical proofs without the need to take an Analysis class – proofs are commonly first taught in such classes in the US. It covers some basic techniques from logic and sets, to methods of direct and indirect proof, and ends with a "Potpourri of Proofs" ([LaTeX](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter5.tex)). 
+
+Mathematics competitions further inspired me. Specifically, while earlier stages are primarily calculation-based, the [USA(J)MO](https://artofproblemsolving.com/wiki/index.php/United_States_of_America_Mathematical_Olympiad?srsltid=AfmBOoo8OMz1n0_P4K823kMM3zD7se1Ghu5FOxeGYNVjAhgXJNcKNE2P) (and the outlier [USAMTS](https://www.usamts.org/)) and further competitions are primarily proof-based. As such, I have made an attempt to demonstrate concepts of mathematical proof while also proving some common theorems/strategies used in competition mathematics (i.e., [AM-GM](https://artofproblemsolving.com/wiki/index.php/AM-GM_Inequality?srsltid=AfmBOopGuELuyHTrtG79eiuwbMnBN6Z4aXai4GHtQ0GWxs8WjgXnFRR0) or [Ptolemy's Theorem)](https://artofproblemsolving.com/wiki/index.php/Ptolemy%27s_theorem?srsltid=AfmBOortSZRCm6DDNukWteF_7JCQ3X1r0ltLfWvKxr_VT9WDYTId6Gfu). 
+
+Above all, I hope it serves as a starting point to inspire many to learn about proof-based mathematics, enjoy it, and ultimately continue forward in their journey. I hope it brings challenges and encourages readers to pursue proof-based math, whether in research, competitions, class, or simply as a hobby for fun!
+
+Thank you,
+
+Hrishi S - *The author*
+
+## Stats (v1.1)
+- 238 pages
+- 100+ Worked Examples and Problems
+- 88 Hints (randomized)
+- Full solutions
+- A lot of fun!
+
+## A Rough Sketch of the Table of Contents
+- Introduction/*Why Proofs?*
+- Logic and Sets
+- Direct Proof Techniques
+- Indirect Proof Techniques
+- Many Mixed Examples
+- Appendices
+  - Hints
+  - Solutions to Problem Sets
+  - Extra Resources
+
+
+## Intended Audience
+
+All readers new to mathematical proofs and curious about learning may benefit. I wrote this book assuming some basic (and some not-so-basic) prerequisites:
+- Basic familiarity with arithmetic, algebra, geometry, and divisibility. In the US, this equates to coursework up to high school geometry. Though not having taken these courses will not mean the book is gibberish, just some examples/problems might be a little more difficult. I advise you to (carefully) use your resources!
+- Some knowledge of modular arithmetic. This is not usually taught in school; ***Appendix C*** contains a list of good handouts to get a good understanding.
+- Significant ingenuity! The problems and examples are difficult, and increase in difficulty as the book goes on. This requires significant perseverance – the problem set is ***not*** easy. I have a hints appendix to help you move forward
+
+The primary audience is students making the transition from solving mathematical problems to constructing mathematical proofs. This happens at different stages for different people, so it is very difficult to pin down a specific age group or other demographic. If you are interested in mathematical proofs and want to learn more in an accessible way, this book is for you!
+
+
+ ## ***Contributing***
+Anyone can help contribute! If you have any specific feedback, $\LaTeX$ fixes or modifications, anything you would like to see added or removed, or any comments, please let me know! If you find typographical errors, mathematical mistakes, unclear explanations, missing/incorrect references/links, please let me know or follow the procedure below. If you would like to add anything of your own, see below. I greatly appreciate contributions and community support. 
+
+Thank you for your interest in improving *Prove It?: The Beginning.* Every correction, suggestion, and contribution helps make the book better for future readers. As a small token of appreciation, contributors may, with their consent, be acknowledged on a special contributors page in future editions of the book
+
+### Contribution Procedure 
+Thank you for helping! You may submit either a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or open an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to get to these promptly!
+
+## License
+FILL
