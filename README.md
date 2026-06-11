@@ -11,7 +11,7 @@ A friendly introduction to mathematical proofs written by and for students and m
 
 Alternatively, access the book by going to [Releases](https://github.com/hrishis2009/Prove-It-The-Beginning/releases), selecting the latest version (v1.1), and selecting "Prove It? The Beginning v1.1.pdf".
 
-Yet another alternative method is by going to [Releases](https://github.com/hrishis2009/Prove-It-The-Beginning/releases), downloading the source code ([zip](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.zip) / [tar.gz](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.tar.gz)), and compiling using a LaTeX distribution such as [MacTeX](https://www.tug.org/mactex/) or [MikTeX](https://miktex.org/).
+Yet another alternative method is by going to [Releases](https://github.com/hrishis2009/Prove-It-The-Beginning/releases), downloading the source code ([zip](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.zip) / [tar.gz](https://github.com/hrishis2009/Prove-It-The-Beginning/archive/refs/tags/v1.1.tar.gz)), and compiling using a [LaTeX](https://www.latex-project.org/) distribution such as [MacTeX](https://www.tug.org/mactex/) or [MikTeX](https://miktex.org/).
 
 From the ``src`` directory, run
 
@@ -41,22 +41,23 @@ Hrishi S - *The author*
 - A lot of fun!
 
 ## A Rough Sketch of the Table of Contents
-- Introduction/*Why Proofs?*
-- Logic and Sets
-- Direct Proof Techniques
-- Indirect Proof Techniques
-- Many Mixed Examples
-- Appendices
-  - Hints
-  - Solutions to Problem Sets
-  - Extra Resources
+Each is linked with the corresponding LaTeX source file.
+- [Introduction / *Why Proofs?*](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter1.tex)
+- [Logic and Sets](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter2.tex)
+- [Direct Proof Techniques](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter3.tex)
+- [Indirect Proof Techniques](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter4.tex)
+- [Many Mixed Examples](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/chapter5.tex)
+- [Appendices](https://github.com/hrishis2009/Prove-It-The-Beginning/tree/main/src/chapters/appendices)
+  - [Hints](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/appendices/hints.tex)
+  - [Solutions to Problem Sets](https://github.com/hrishis2009/Prove-It-The-Beginning/tree/main/src/chapters/appendices) (`apsX.tex`)
+  - [Extra Resources](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/appendices/resources.tex)
 
 
 ## Intended Audience
 
 All readers new to mathematical proofs and curious about learning may benefit. I wrote this book assuming some basic (and some not-so-basic) prerequisites:
 - Basic familiarity with arithmetic, algebra, geometry, and divisibility. In the US, this equates to coursework up to high school geometry. Though not having taken these courses will not mean the book is gibberish, just some examples/problems might be a little more difficult. I advise you to (carefully) use your resources!
-- Some knowledge of modular arithmetic. This is not usually taught in school; ***Appendix C*** contains a list of good handouts to get a good understanding.
+- Some knowledge of modular arithmetic. This is not usually taught in school; [***Appendix C***](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/src/chapters/appendices/resources.tex) contains a list of good handouts to get a good understanding.
 - Significant ingenuity! The problems and examples are difficult, and increase in difficulty as the book goes on. This requires significant perseverance – the problem set is ***not*** easy. I have a hints appendix to help you move forward
 
 The primary audience is students making the transition from solving mathematical problems to constructing mathematical proofs. This happens at different stages for different people, so it is very difficult to pin down a specific age group or other demographic. If you are interested in mathematical proofs and want to learn more in an accessible way, this book is for you!
