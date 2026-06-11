@@ -1,4 +1,4 @@
-![GitHub Downloads](https://img.shields.io/github/downloads/hrishis2009/Prove-It-The-Beginning/total) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hrishis2009/Prove-It-The-Beginning)
+![GitHub Downloads](https://img.shields.io/github/downloads/hrishis2009/Prove-It-The-Beginning/total) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/hrishis2009/Prove-It-The-Beginning) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Prove It?: *The Beginning*
 A friendly introduction to mathematical proofs written by and for students and math competition enthusiasts.
@@ -18,7 +18,7 @@ From the ``src`` directory, run
 ```
 latexmk -pdf main.tex
 ```
-This build process has been tested primarily with ``latexmk`` and pdfLaTeX. Alternative compilers or build systems may need to install additional dependencies(INSERT LINK) or make minor adjustments to the build/compile process.
+This build process has been tested primarily with ``latexmk`` and pdfLaTeX. Alternative compilers or build systems may need to install additional [dependencies](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/DEPENDENCIES.md) or make minor adjustments to the build/compile process.
 
 
 ## About
@@ -62,13 +62,17 @@ All readers new to mathematical proofs and curious about learning may benefit. I
 The primary audience is students making the transition from solving mathematical problems to constructing mathematical proofs. This happens at different stages for different people, so it is very difficult to pin down a specific age group or other demographic. If you are interested in mathematical proofs and want to learn more in an accessible way, this book is for you!
 
 
- ## ***Contributing***
-Anyone can help contribute! If you have any specific feedback, $\LaTeX$ fixes or modifications, anything you would like to see added or removed, or any comments, please let me know! If you find typographical errors, mathematical mistakes, unclear explanations, missing/incorrect references/links, please let me know or follow the procedure below. If you would like to add anything of your own, see below. I greatly appreciate contributions and community support. 
+## ***Contributing***
 
-Thank you for your interest in improving *Prove It?: The Beginning.* Every correction, suggestion, and contribution helps make the book better for future readers. As a small token of appreciation, contributors may, with their consent, be acknowledged on a special contributors page in future editions of the book
+Anyone is welcome to contribute. Feedback, LaTeX fixes, clarifications, suggestions for additional content, or any other improvements are appreciated.
 
-### Contribution Procedure 
-Thank you for helping! You may submit either a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or open an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to get to these promptly!
+In particular, reports of typographical errors, mathematical mistakes, unclear explanations, or issues with references are especially helpful.
+
+Contributors may, with their consent, be acknowledged on a special contributors page in future editions of the book.
+
+### Contribution Procedure
+
+You may contribute by submitting a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or opening an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to review submissions promptly.
 
 ## License
-FILL
+This work is [licensed](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/LICENSE.md) under CC BY-NC-SA 4.0.
