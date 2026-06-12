@@ -19,6 +19,8 @@ When submitting a Pull Request/Issue, please include
 
 By submitting a contribution to this project, you represent that you have the right to submit the material.
 
-You retain copyright to your contribution. However, by submitting a contribution, you grant the maintainer of this project a perpetual, irrevocable, worldwide, non-exclusive, royalty-free license to use, reproduce, modify, distribute, publish, and incorporate your contribution into this project and any future editions, versions, or derivative works of the project, including for commercial purposes.
+You retain copyright to your contribution. However, by submitting a contribution, you grant the maintainer of this project a perpetual, irrevocable, worldwide, non-exclusive, royalty-free license to use, reproduce, modify, distribute, publish, sublicense, and incorporate your contribution into this project and any future editions, versions, translations, adaptations, or derivative works of the project, including for commercial purposes.
 
 Unless otherwise agreed, contributions incorporated into the project will be distributed under the project's license.
+
+By submitting a contribution (including via Pull Request, Issue, email, or any other means), you agree to the terms of this Contribution License Agreement.
