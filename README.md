@@ -63,17 +63,20 @@ All readers new to mathematical proofs and curious about learning may benefit. I
 The primary audience is students making the transition from solving mathematical problems to constructing mathematical proofs. This happens at different stages for different people, so it is very difficult to pin down a specific age group or other demographic. If you are interested in mathematical proofs and want to learn more in an accessible way, this book is for you!
 
 
-## ***Contributing***
+## Contributing
 
-Anyone is welcome to contribute. Feedback, LaTeX fixes, clarifications, suggestions for additional content, or any other improvements are appreciated.
+Anyone is welcome to [contribute](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/CONTRIBUTING.md). Feedback, LaTeX fixes, clarifications, suggestions for additional content, or any other improvements are appreciated.
 
 In particular, reports of typographical errors, mathematical mistakes, unclear explanations, or issues with references are especially helpful.
 
 Contributors may, with their consent, be acknowledged on a special contributors page in future editions of the book.
 
+Please see [`CONTRIBUTING.md`](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/CONTRIBUTING.md) for the Contributing License Agreement (CLA) and further details.
+
 ### Contribution Procedure
 
 You may contribute by submitting a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or opening an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to review submissions promptly.
+
 
 ## License
 This work is [licensed](https://github.com/hrishis2009/Prove-It-The-Beginning/blob/main/LICENSE.md) under CC BY-NC-SA 4.0.
