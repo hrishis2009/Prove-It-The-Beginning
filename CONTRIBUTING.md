@@ -8,7 +8,7 @@ Contributors may, with their consent, be acknowledged on a special contributors 
 
 ### Contribution Procedure
 
-You may contribute by submitting a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or opening an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to review submissions promptly.
+You may contribute by submitting a [Pull Request](https://github.com/hrishis2009/Prove-It-The-Beginning/pulls) or opening an [Issue](https://github.com/hrishis2009/Prove-It-The-Beginning/issues). I will try to review submissions promptly. If you just have feedback, feel free to open an Issue, and also feel free to email me [hrishis2009@gmail.com](mailto:hrishis2009@gmail.com).
 
 When submitting a Pull Request/Issue, please include
  - The chapter(s) (or file(s)) where the issue(s) occur
